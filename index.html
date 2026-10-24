@@ -86,7 +86,7 @@
   <div class="sec-head"><div class="kicker">Tarifs</div><h2>Commence gratuitement, choisis ensuite</h2><p>7 jours d'essai sans carte bancaire. Abonnement sans engagement, résiliable à tout moment.</p></div>
   <div class="billing"><div class="seg" id="billing"><button type="button" data-v="month" class="on">Mensuel</button><button type="button" data-v="year">Annuel <span class="save">−20 %</span></button></div></div>
   <div class="plans" id="plans"></div>
-  <div class="trust"><span><b>Sans engagement</b> · résiliable à tout moment</span><span><b>Paiement sécurisé</b> par Lemon Squeezy</span><span><b>Prix TTC</b> · TVA incluse</span></div>
+  <div class="trust"><span><b>Sans engagement</b> · résiliable à tout moment</span><span><b>Paiement sécurisé</b> par Creem</span><span><b>Prix TTC</b> · TVA incluse</span></div>
 </div></section>
 
 <section id="demarrer"><div class="wrap">
@@ -111,7 +111,7 @@
     <details><summary>Ça fonctionne sur Mac ou sur téléphone ?</summary><p>Pour l'instant, l'application fonctionne sur Windows 10 et 11, avec MetaTrader 5 installé.</p></details>
     <details><summary>Comment se passe l'essai gratuit ?</summary><p>Tu installes l'app et tu cliques sur « Commencer l'essai gratuit » : 7 jours d'accès, sans carte bancaire. À la fin de l'essai, tu choisis une offre pour continuer.</p></details>
     <details><summary>Quelle différence entre Essentiel et Pro ?</summary><p>Essentiel permet de connecter 1 compte. Pro permet jusqu'à 50 comptes et ajoute la vue « tous les comptes », le suivi en direct des positions, le rapport PDF mensuel et les cartes de résultats à partager.</p></details>
-    <details><summary>Comment annuler mon abonnement ?</summary><p>Depuis la page Tarification de l'app (« Gérer mon abonnement ») ou depuis le lien reçu par e-mail. Sans engagement : l'accès reste ouvert jusqu'à la fin de la période payée.</p></details>
+    <details><summary>Comment annuler mon abonnement ?</summary><p>Depuis le lien « gérer mon abonnement » de l'e-mail de confirmation envoyé par Creem, ou en nous écrivant. Sans engagement : l'accès reste ouvert jusqu'à la fin de la période payée.</p></details>
     <details><summary>Je peux l'utiliser sur plusieurs PC ?</summary><p>Oui, ta clé fonctionne sur 2 PC. Tu peux aussi la retirer d'un PC pour l'utiliser sur un autre.</p></details>
   </div>
 </div></section>
@@ -134,8 +134,11 @@
 </div></footer>
 
 <script>
-// Liens de paiement Lemon Squeezy : à remplir dès qu'ils sont créés
-const CHECKOUT = { essentiel: { month: '', year: '' }, pro: { month: '', year: '' } };
+// Liens de paiement Creem : à remplir dès qu'ils sont créés
+const CHECKOUT = {
+  essentiel: { month: 'https://www.creem.io/payment/prod_J9E4RND5WxferOtBagLse', year: 'https://www.creem.io/payment/prod_75iJoLnVkW6P9oRJKezVY7' },
+  pro: { month: 'https://www.creem.io/payment/prod_Q6IVnV9x4c7YWEf84cjIg', year: 'https://www.creem.io/payment/prod_TW2zwHrN4UZRp6hHAtzPi' },
+};
 const PLANS = [
   { id: 'essai', name: 'Essai gratuit', acc: 'Sans carte bancaire · 1 compte', month: ['0 €', 'pendant 7 jours'], bill: 'Puis choisis ton offre, sans obligation' },
   { id: 'essentiel', name: 'Essentiel', acc: '1 compte connecté', month: ['24,95 €', 'par mois'], year: ['20,00 €', 'par mois', '24,95 €', '239,95 €'] },
