@@ -187,3 +187,8 @@ footer .risk { grid-column: 1 / -1; font-size: 12.5px; color: #677084; border-to
 .btn .win { width: 18px; height: 18px; flex: none; }
 .win-link { display: flex !important; align-items: center; gap: 7px; }
 .win-link .win { width: 13px; height: 13px; flex: none; }
+/* titres en majuscules */
+.hero h1, .sec-head h2, .feat h3, .dl h3, .legal h1 { text-transform: uppercase; letter-spacing: -.01em; }
+.hero h1 { font-size: clamp(32px, 5.4vw, 64px); line-height: 1.06; }
+.sec-head h2 { font-size: clamp(26px, 3.6vw, 40px); }
+.feat h3 { font-size: clamp(24px, 2.9vw, 34px); }
