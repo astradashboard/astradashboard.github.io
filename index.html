@@ -8,7 +8,7 @@
 <link rel="icon" href="img/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=4">
+<link rel="stylesheet" href="style.css?v=5">
 <meta property="og:title" content="ASTRA Dashboard · Le dashboard des traders prop firm">
 <meta property="og:description" content="Tous tes comptes prop firm, tes stats, ton journal et ton rapport PDF au même endroit. Essai gratuit 7 jours.">
 <meta property="og:image" content="img/dashboard.webp?v=2">
@@ -92,13 +92,13 @@
 <section id="demarrer"><div class="wrap">
   <div class="sec-head"><div class="kicker">Démarrer</div><h2>Prêt en 3 minutes</h2></div>
   <div class="steps">
-    <div><b>Télécharge l'app pour Windows</b><span>Application gratuite pour Windows 10 et 11. MetaTrader 5 doit être installé sur le PC.</span></div>
+    <div><b>Télécharge l'app pour Windows</b><span>Application gratuite pour Windows 10 et 11. MetaTrader 5 doit être installé sur le PC. Sur Mac : via Parallels ou un VPS Windows.</span></div>
     <div><b>Connecte ton compte</b><span>Numéro de compte, serveur et mot de passe investisseur (lecture seule) : l'app ne passe jamais d'ordre.</span></div>
     <div><b>Profite de l'essai</b><span>7 jours gratuits, puis choisis l'offre Essentiel ou Pro. Ta clé arrive par e-mail.</span></div>
   </div>
   <div class="dl">
     <div><h3>ASTRA Dashboard pour Windows</h3><p>Un seul fichier à lancer : l'installation se fait en quelques secondes et crée un raccourci sur le bureau. Les mises à jour s'installent ensuite toutes seules.</p><p style="font-size:13px;opacity:.75;margin-top:8px">Si Windows affiche « Windows a protégé votre ordinateur », clique sur « Informations complémentaires » puis « Exécuter quand même ».</p></div>
-    <a class="btn primary" href="https://github.com/astradashboard/astra-dashboard/releases/latest/download/ASTRA-Dashboard-Setup.exe">Télécharger pour Windows</a>
+    <a class="btn primary" href="https://github.com/astradashboard/astra-dashboard/releases/latest/download/ASTRA-Dashboard-Setup.exe"><svg class="win" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M2 3.5h9.5V11H2zM12.5 3.5H22V11h-9.5zM2 12h9.5v8.5H2zM12.5 12H22v8.5h-9.5z"/></svg>Télécharger pour Windows</a>
   </div>
 </div></section>
 
@@ -108,7 +108,7 @@
     <details><summary>Avec quelles prop firms ça marche ?</summary><p>Avec tous les comptes MetaTrader 5 : FTMO et les autres prop firms ou brokers qui utilisent MT5. Il suffit du numéro de compte, du serveur et du mot de passe.</p></details>
     <details><summary>Mes identifiants sont-ils en sécurité ?</summary><p>Oui. Tout reste sur ton PC : les mots de passe mémorisés sont rangés dans le Gestionnaire d'identification de Windows et ne sont envoyés à aucun serveur. Le mot de passe investisseur suffit, il ne permet que la lecture.</p></details>
     <details><summary>L'app peut-elle passer des ordres ?</summary><p>Non. ASTRA Dashboard lit seulement ton capital et ton historique pour les analyser. Elle ne passe, ne modifie et ne ferme jamais aucune position.</p></details>
-    <details><summary>Ça fonctionne sur Mac ou sur téléphone ?</summary><p>Pour l'instant, l'application fonctionne sur Windows 10 et 11, avec MetaTrader 5 installé.</p></details>
+    <details><summary>Ça fonctionne sur Mac ou sur téléphone ?</summary><p>L'application fonctionne sur Windows 10 et 11, avec MetaTrader 5 installé : la connexion de MetaTrader 5 aux applications n'existe que sur Windows. Sur Mac, tu peux l'utiliser avec Windows installé via Parallels Desktop, ou sur un VPS Windows (celui où tourne souvent déjà ton MT5), en bureau à distance.</p></details>
     <details><summary>Comment se passe l'essai gratuit ?</summary><p>Tu installes l'app et tu cliques sur « Commencer l'essai gratuit » : 7 jours d'accès, sans carte bancaire. À la fin de l'essai, tu choisis une offre pour continuer.</p></details>
     <details><summary>Quelle différence entre Essentiel et Pro ?</summary><p>Essentiel permet de connecter 1 compte. Pro permet jusqu'à 50 comptes et ajoute la vue « tous les comptes », le suivi en direct des positions, le rapport PDF mensuel et les cartes de résultats à partager.</p></details>
     <details><summary>Comment annuler mon abonnement ?</summary><p>Depuis le lien « gérer mon abonnement » de l'e-mail de confirmation envoyé par Creem, ou en nous écrivant. Sans engagement : l'accès reste ouvert jusqu'à la fin de la période payée.</p></details>
@@ -128,9 +128,9 @@
 <footer><div class="wrap">
   <div><a class="brand" href="#" style="margin:0 0 12px"><img src="img/logo-emblem.png" alt=""><div>ASTRA <span>CAPITAL</span></div></a>
     Le dashboard des traders prop firm.<br>Contact : <a href="mailto:astracapital369@gmail.com" style="display:inline">astracapital369@gmail.com</a></div>
-  <div><b>Produit</b><a href="#fonctions">Fonctions</a><a href="#tarifs">Tarifs</a><a href="#demarrer">Télécharger pour Windows</a><a href="#faq">FAQ</a></div>
+  <div><b>Produit</b><a href="#fonctions">Fonctions</a><a href="#tarifs">Tarifs</a><a href="#demarrer" class="win-link"><svg class="win" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M2 3.5h9.5V11H2zM12.5 3.5H22V11h-9.5zM2 12h9.5v8.5H2zM12.5 12H22v8.5h-9.5z"/></svg>Télécharger pour Windows</a><a href="#faq">FAQ</a></div>
   <div><b>Informations légales</b><a href="conditions.html">Conditions générales de vente</a><a href="remboursement.html">Politique de remboursement</a><a href="confidentialite.html">Politique de confidentialité</a><a href="mentions-legales.html">Mentions légales</a></div>
-  <div class="risk">ASTRA Dashboard est un outil d'analyse de tes comptes de trading. Il ne fournit aucun conseil en investissement. Le trading comporte un risque élevé de perte en capital. Les captures présentées utilisent des données de démonstration. FTMO, MetaTrader et TradingView sont des marques de leurs propriétaires respectifs ; ASTRA Dashboard n'est ni affilié ni approuvé par ces sociétés. © 2026 ASTRA CAPITAL.</div>
+  <div class="risk">ASTRA Dashboard est un outil d'analyse de tes comptes de trading. Il ne fournit aucun conseil en investissement. Le trading comporte un risque élevé de perte en capital. Les captures présentées utilisent des données de démonstration. FTMO, MetaTrader, TradingView et Windows sont des marques de leurs propriétaires respectifs ; ASTRA Dashboard n'est ni affilié ni approuvé par ces sociétés. © 2026 ASTRA CAPITAL.</div>
 </div></footer>
 
 <script>
