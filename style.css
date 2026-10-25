@@ -194,3 +194,7 @@ footer .risk { grid-column: 1 / -1; font-size: 12.5px; color: #677084; border-to
 .feat h3 { font-size: clamp(24px, 2.9vw, 34px); }
 .m-only { display: none; }
 @media (max-width: 720px) { .m-only { display: block; margin-top: 46px; } .d-only { display: none; } }
+/* moins d'espace au-dessus des rubriques Tarifs et Démarrer */
+#tarifs, #demarrer { padding-top: 44px; }
+section:has(+ #tarifs), #tarifs { padding-bottom: 48px; }
+@media (max-width: 720px) { #tarifs, #demarrer { padding-top: 30px; } section:has(+ #tarifs), #tarifs { padding-bottom: 36px; } }
